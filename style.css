@@ -166,9 +166,9 @@ input:focus {
     height:150px;
     background-color:#16a085;
     position:absolute;
-    top:300px;
+    top:350px;
     left:50%;
-    transform: translate(0,-50)
+    transform: translate(-50%,-50%);
     border-radius: 10px;
     box-shadow:2px 2px 10px rgb(37, 37, 37);
   } 
@@ -177,9 +177,9 @@ input:focus {
     height:150px;
     background-color:#e67e22;
     position:absolute;
-    top:480px;
+    top:550px;
     right:50%;
-    transform: translate(0,-50)
+    transform: translate(50%,-50%);
     border-radius:10px;
     box-shadow:2px 2px 10px rgb(37, 37, 37);
   }
