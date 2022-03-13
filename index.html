@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Bank App</title>
+</head>
+<body>
+  <div id="login-page">
+    <h1>JavaScript Mini Bank</h1>
+    <div id ="login" class="login">
+      <form>
+        <h4>Your user name</h4>
+        <input id="username" class="input-box" type="text" name="username" placeholder="Enter your user name"><br>
+        <h4>Your password</h4>
+        <input id="password" class="input-box" type="password" name="password" placeholder="Enter your password"><br>
+      </form>
+      <input id="loginbtn" type="submit" name="submit" value="login">
+  </div>
+  </div>
+  <div id="bank">
+    <h1>Welcome to our bank Mr. <span id="welcome"></span></h1>
+    <div class="total-balance">
+      <h2>Total Balance: <span id="total-amount">5000</span></h2>
+    </div>
+    <div class="diposit">
+      <h3>Total diposit amount: <span id="total-diposit">0</span></h3>
+      <input id="deposit-input" type="text" placeholder="Enter your amount">
+      <button class="btn" id="addbtn">Add Money</button>
+
+    </div>
+    <div class="withdrow">
+      <h3>Total withdrow amount: <span id="total-withdrow">0</span></h3>
+      <input id="withdrow-input" type="text" placeholder="Enter your amount">
+      <button class="btn" id="withdrowbtn">Withdrow</button>
+    </div>
+
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
