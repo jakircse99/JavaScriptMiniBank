@@ -16,6 +16,7 @@
   background-position:center;
   height:100vh;
   width:100%;
+  display: none;
 }
 
 /*Heading text design*/
@@ -91,7 +92,7 @@ input:focus {
   background-color:#34495e;
   height:100vh;
   position:relative;
-  display:none;
+  
 }
 #bank h1 {
   text-align:center;

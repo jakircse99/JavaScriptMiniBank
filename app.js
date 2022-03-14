@@ -52,6 +52,7 @@ function diposit() {
   let totalAmount = document.getElementById("total-amount");
   let currentAmount = document.getElementById("total-amount").innerHTML;
   totalAmount.innerHTML = parseFloat(currentAmount) + totalDipositnew;
+  dipositInput.value = "";
 
 
 };
@@ -64,13 +65,15 @@ let withdrowBtn = document.getElementById("withdrowbtn");
 function withdrow() {
   let totalWithdrowCurrent = document.getElementById("total-withdrow").innerHTML;
   let totalWithdrow = document.getElementById("total-withdrow");
-  let withDorwInput = document.getElementById("withdrow-input").value;
-  totalWithdrow.innerHTML = parseFloat(totalWithdrowCurrent) + parseFloat(withDorwInput);
+  let withDorwInput = document.getElementById("withdrow-input");
+  totalWithdrow.innerHTML = parseFloat(totalWithdrowCurrent) + parseFloat(withDorwInput.value);
 
   let totalAmount = document.getElementById("total-amount");
   let currentAmount = document.getElementById("total-amount").innerHTML;
 
-  totalAmount.innerHTML = currentAmount - parseFloat(withDorwInput)
+  totalAmount.innerHTML = currentAmount - parseFloat(withDorwInput.value);
+
+  withDorwInput.value = "";
   console.log(totalAmount.innerHTML);
   console.log(currentAmount)
   
